@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Sunshine - Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Styling for the gallery title */
+        h1 {
+            background-color: aqua;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Gallery container */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* Individual image containers */
+        .gallery-item {
+            flex-basis: 30%;
+            margin: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex-basis: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Gallery Header -->
+    <h1>Gallery Page</h1>
+
+    
+    <div class="gallery-container">
+                <div class="gallery-item">
+            <img src="room1.jpg" alt="Luxury Room">
+        </div>
+    
+        <div class="gallery-item">
+            <img src="swim.jpg" alt="Swimming Pool">
+        </div>
+        
+        <div class="gallery-item">
+            <img src="res.jpg" alt="Hotel Restaurant">
+        </div>
+    
+        <div class="gallery-item">
+            <img src="lobby.jpg" alt="Hotel Lobby">
+        </div>
+    </div>
+
+</body>
+</html>

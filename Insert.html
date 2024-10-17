@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Player SignUp Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: #f0f8ff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+           
+
+            .form-container h1 {
+                text-align: center;
+                color: #2e8b57;
+            }
+
+            label {
+                font-weight: bold;
+                color: #333;
+            }
+            .submit-btn {
+                background-color: #2e8b57;
+                color: white;
+                padding: 12px;
+                border: none;
+                border-radius: 5px;
+                width: 100%;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            .submit-btn:hover {
+                background-color: #246b3e;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h1>Please Fill this Information...</h1>
+            <form>
+                <label for="Adhar No">Adhar No:</label>
+                <input type="text" id="Adhar No" name="Adhar No" placeholder="Enter Adhar  Number">
+                <br>
+                <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your  Name">
+                <br>
+                <br>
+                <label for="Rooms Type">Rooms Type:</label>
+                <input type="text" id="Rooms Type" name="Rooms Type" placeholder="Enter Rooms Type">
+                <br>
+                <br>
+                <label for="Rooms">Rooms:</label>
+                <input type="number" id="Rooms" name="Rooms" placeholder="Enter Rooms">
+                <br>
+                 <br>
+                <label for="Date">Date:</label>
+                <input type="datetime" id="Date" name="Date" placeholder="Enter Date">
+                <br>
+                <br>
+                <div class="radio-group">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="submit-btn">Save</button>
+            </form>
+        </div>
+    </body>
+</html>
